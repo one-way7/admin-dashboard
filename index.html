@@ -9,26 +9,35 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="search-icon"><img src="#" alt=""></div>
-            <input type="search" class="searchbar">
-            <div class="bell-icon"><img src="#" alt=""></div>
-            <div class="user-icon-small"><img src="#" alt=""></div>
+            <div class="searchbar">
+                <img src="./icons/magnify.svg" alt="search icon" width="30">
+                <input type="text" class="searchbar">
+            </div>
+            <img class="ring-icon" src="./icons/bell-ring-outline.svg" alt="bell ring icon" width="30">
+            <img class="user-icon" src="./icons/user-icon.png" alt="user-icon" width="40">
             <span class="username">Morgan Oakley</span>
-            <div class="user-icon-big"><img src="#" alt=""></div>
-            <span class="greeting">Hi there,</span>
-            <span class="username-greeting">Morgan Oakley (@morgan)</span>
-            <button class="btn-new">New</button>
-            <button class="btn-upload">Upload</button>
-            <button class="btn-share">Share</button>
+            <div class="greeting">
+                <div class="greeting-icon"><img src="./icons/user-icon.png" alt="user-icon" width="60"></div>
+                <span class="greeting-text">Hi there,</span>
+                <span class="greeting-username">Morgan Oakley (@morgan)</span>
+            </div>
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
         </header>
 
-        <section class="sidebar">
-            <div class="logo"><img src="#" alt=""></div>
-            <h1>Dashboard</h1>
+        <div class="sidebar">
+            <div class="sidebar-container">
+            <div class="logo"><img src="./icons/view-dashboard.svg" alt="logo" width="50"></div>
+            <h1 class="sidebar-heading">Dashboard</h1>
+            </div>
             
-            <nav>
+            <nav class="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li>
+                        <img src="./icons/home.svg" alt="home icon" width="20">
+                        <a href="#">Home</a>
+                    </li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Messages</a></li>
                     <li><a href="#">History</a></li>
@@ -39,9 +48,9 @@
                     <li><a href="#">Privacy</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
 
-        <main>
+        <main class="main">
             <section class="main-content">
                 <div class="projects">
                     <h2>Your projects</h2>
